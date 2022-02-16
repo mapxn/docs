@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+</head>
+<body>
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      name: 'Title',       // 网站标题
+      nameLink: '/',   // 标题链接
+      
+      // 网站logo，显示在侧边栏
+      // logo: '/_media/favicon.ico',
+
+      // repo: 'https://github.com/docsifyjs/docsify/', 也可以使用绝对地址
+      repo: 'docsifyjs/docsify',   // 仓库地址
+      
+      loadNavbar: true,       // 是否加载导航栏
+      loadSidebar: true,      // 是否加载侧边栏
+      autoHeader: true,
+      subMaxLevel: 1,         // 读取md文件中最大几级目录
+      maxLevel: 3,            // 最多几级标题
+
+      auto2top: true,         // 自动回顶
+
+      themeColor: '#3F51B5',
+
+      // 是否显示封面
+      coverpage: true,
+      // 自定义cover
+      //coverpage: '_coverpage.md',
+      
+      // 小屏幕，自动合并导航栏
+      mergeNavbar: true,
+
+      // 显示文档更新时间
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+
+      // 外部连接打开方式
+      externalLinkTarget: '_self', // default: '_blank'
+
+      // 右上角链接打开方式
+      cornerExternalLinkTarget: '_self', // default: '_blank'
+
+      // 请求文件后缀
+      ext: '.md',
+
+      // 404 页面
+      notFoundPage: true,
+      
+      // load from _footer.md
+      //loadFooter: false,
+      loadFooter: '_footer.md',
+
+      // Word Count
+      count:{
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'english'
+      }
+    }
+  </script>
+
+
+
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+
+  <!-- Docsify Search -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
+
+  <!-- Docsify Sidebar Collapse -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+  <!-- Use the footer plugin latest version -->
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+
+  <!-- Word Count -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- Offline Mode -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('_js/sw.js')
+    }
+  </script>
+
+</body>
+</html>
