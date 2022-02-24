@@ -82,6 +82,19 @@
   <!-- Word Count -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
+  <script>
+    window.$docsify = {
+      waline: {
+          serverURL: "https://docs-api-zeta.vercel.app/",
+          copyright: false,
+          lang: 'zh-cn',
+      }
+    }
+  </script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-waline/docsify-waline.min.js"></script>
+
   <!-- Offline Mode -->
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
